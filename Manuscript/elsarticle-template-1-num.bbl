@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{42}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
@@ -232,6 +232,13 @@
   of dynamical systems},
 \newblock \bibinfo{journal}{arXiv preprint arXiv:1808.04258}
   (\bibinfo{year}{2018}).
+%Type = Techreport
+\bibitem[{Wang et~al.(2019)Wang, Ripamonti, and Hesthaven}]{wang2019recurrent}
+\bibinfo{author}{Q.~Wang}, \bibinfo{author}{N.~Ripamonti},
+  \bibinfo{author}{J.~S. Hesthaven}, \bibinfo{title}{{Recurrent neural network
+  closure of parametric POD-Galerkin reduced-order models based on the
+  Mori-Zwanzig formalism}}, \bibinfo{type}{Technical Report},
+  \bibinfo{year}{2019}.
 %Type = Article
 \bibitem[{Bec and Khanin(2007)}]{bec2007burgers}
 \bibinfo{author}{J.~Bec}, \bibinfo{author}{K.~Khanin},
