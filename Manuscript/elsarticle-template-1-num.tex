@@ -34,7 +34,7 @@
 
 %% The graphicx package provides the includegraphics command.
 \usepackage{graphicx}
-\graphicspath{{Figures/}}
+% \graphicspath{{Figures/}}
 %% The amssymb package provides various useful mathematical symbols
 \usepackage{amsmath,amssymb,amsfonts}
 %% The amsthm package provides extended theorem environments
@@ -89,21 +89,25 @@
 %%
 %% \title{Title\tnoteref{label1}}
 %% \tnotetext[label1]{}
-\author[label1]{Romit Maulik\corref{cor1}}
-\cortext[cor1]{Corresponding author}
-\ead{rmaulik@anl.gov}
-\author[label2]{Arvind Mohan}
-\ead{arvindm@lanl.gov}
-\author[label1]{Bethany Lusch}
-\ead{blusch@anl.gov}
-\author[label3]{Sandeep Madireddy}
-\ead{smadireddy@anl.gov}
-\author[label1,label3]{Prasanna Balaprakash}
-\ead{pbalapra@anl.gov}
 
-\address[label1]{Argonne Leadership Computing Facility, Argonne National Laboratory, Lemont, IL 60439, USA\fnref{label1}}
-\address[label2]{Center for Nonlinear Studies/CCS-2 Division, Los Alamos National Laboratory, Los Alamos, NM 87545, USA\fnref{label2}}
-\address[label3]{Mathematics and Computer Science Division, Argonne National Laboratory, Lemont, IL 60439, USA\fnref{label3}}
+% %% Author info
+% \author[label1]{Romit Maulik\corref{cor1}}
+% \cortext[cor1]{Corresponding author}
+% \ead{rmaulik@anl.gov}
+% \author[label2]{Arvind Mohan}
+% \ead{arvindm@lanl.gov}
+% \author[label1]{Bethany Lusch}
+% \ead{blusch@anl.gov}
+% \author[label3]{Sandeep Madireddy}
+% \ead{smadireddy@anl.gov}
+% \author[label1,label3]{Prasanna Balaprakash}
+% \ead{pbalapra@anl.gov}
+% \author[label2]{Daniel Livescu}
+% \ead{livescu@lanl.gov}
+
+% \address[label1]{Argonne Leadership Computing Facility, Argonne National Laboratory, Lemont, IL 60439, USA\fnref{label1}}
+% \address[label2]{Center for Nonlinear Studies/CCS-2 Division, Los Alamos National Laboratory, Los Alamos, NM 87545, USA\fnref{label2}}
+% \address[label3]{Mathematics and Computer Science Division, Argonne National Laboratory, Lemont, IL 60439, USA\fnref{label3}}
 
 
 
@@ -169,7 +173,7 @@ It is well known that the above equations are capable of generating discontinuou
 
 \subsection{Proper orthogonal decomposition}
 
-In this section, we review the proper orthogonal decomposition (POD) technique for the construction of a reduced basis \cite{kosambi1943statistics,berkooz1993proper}. The POD procedure is tasked with identifying a space
+In this section, we review the proper orthogonal decomposition (POD) technique for the construction of a reduced basis \cite{kosambi1943statistics,berkooz1993proper}. The interested reader may also find an excellent explanation of POD and its relationship with other dimension-reduction techniques in \cite{taira2019modal}. The POD procedure is tasked with identifying a space
 \begin{linenomath*}
 \begin{align}
 \mathbf{X}^{f}=\operatorname{span}\left\{\boldsymbol{\vartheta}^{1}, \dots, \boldsymbol{\vartheta}^{f}\right\},
@@ -288,7 +292,7 @@ with $L[f] = \frac{\partial^2 f}{\partial x^2}$ and $N[f;g] = -f \frac{\partial 
 
 \subsection{Contribution}
 
-In this article, we investigate strategies to bypass the POD-GP process with an intrusion-free (or equation-free) learning of dynamics in reduced space. We deploy machine learning strategies devised for sequential data learning on time-series samples extracted from the true dynamics of the problems considered. In recent literature, there has been a considerable interest in the utility of machine learning techniques for effective ROM construction. Data-driven techniques have been used in various phases of ROM techniques such as in reduced basis construction \cite{lee2018model}, augmented dynamics evolution \cite{lusch2018deep,mohan2018deep,san2018neural,san2018extreme,guo2019data,san2019artificial,mohebujjaman2019physically,wang2019non,yeo2019deep,mohan2019compressed} and system identification \cite{brunton2016discovering,kutz2016dynamic,rudy2017data,champion2019data}. 
+In this article, we investigate strategies to bypass the POD-GP process with an intrusion-free (or equation-free) learning of dynamics in reduced space. We deploy machine learning strategies devised for sequential data learning on time-series samples extracted from the true dynamics of the problems considered. In recent literature, there has been a considerable interest in the utility of machine learning techniques for effective ROM construction. Data-driven techniques have been used in various phases of ROM techniques such as in reduced basis construction \cite{lee2018model}, augmented dynamics evolution \cite{lusch2018deep,mohan2018deep,san2018neural,san2018extreme,guo2019data,san2019artificial,mohebujjaman2019physically,wang2019non,yeo2019deep,mohan2019compressed} and system identification \cite{brunton2016discovering,kutz2016dynamic,rudy2017data,champion2019data,raissi2017physics}. 
 
 In this article, we study the utility of data-driven techniques to make \emph{a posteriori} predictions for state evolution in reduced space with assessments made on their ability to reconstruct transient characteristics of the full-order solution. It is also observed that the ability to learn a time series (possible through the in-built design of memory and an assumption of non-i.i.d sequential data in the learning) leads to an implicit closure whereby the effects of uncaptured frequencies are retained, drawing parallels to a Mori-Zwanzig formalism. In related work, the study in \cite{ma2018model} utilizes recurrent neural networks to explicitly specify a sub-grid stress model for large eddy simulation with the lower frequency evolution controlled by coarse-grained partial differential equations. Our framework is also similar to \citep{wang2019recurrent} where an LSTM is utilized to learn a \emph{parametric} memory kernel for explicit closure of nonlinear PDEs. The present study can be considered a \emph{non-intrusive} counterpart of these investigations. In addition, we also detail a formalism for efficient machine learning architecture selection using scaleable Bayesian Optimization. Our test problems are given by the advection-dominated viscous Burgers equation \cite{san2018neural} with a moving shock as well as a pseudo-turbulence test case denoted `Burgulence' \cite{bec2007burgers,maulik2018explicit} showing the characteristic $k^{-2}$ scaling in wavenumber ($k$) space.
 
@@ -650,7 +654,7 @@ All the relevant data and codes for this study shall be provided in a public rep
 
 \section{Acknowledgements}
 
-This research used resources of the Argonne Leadership Computing Facility, a U.S. Department of Energy (DOE) Office of Science User Facility. Romit Maulik acknowledges an appointment to the Argonne National Laboratory Margaret Butler fellowship. Deephyper was developed with support from the DOE 2018 Early Career Award funded by the Advanced Scientific Computing Research program (PI: Prasanna Balaprakash) and SLIK-D - an Argonne Computing, Environment and Life Sciences LDRD Program (2016-2018). Argonne National Laboratory's work was supported by the U.S. Department of Energy under contract DE-AC02-06CH11357. This paper describes objective technical results and analysis. Any subjective views or opinions that might be expressed in the paper do not necessarily represent the views of the U.S. DOE or the United States Government.
+This research used resources of the Argonne Leadership Computing Facility, a U.S. Department of Energy (DOE) Office of Science User Facility. Romit Maulik acknowledges an appointment to the Argonne National Laboratory Margaret Butler fellowship. Deephyper was developed with support from the DOE 2018 Early Career Award funded by the Advanced Scientific Computing Research program (PI: Prasanna Balaprakash) and SLIK-D - an Argonne Computing, Environment and Life Sciences LDRD Program (2016-2018). Argonne National Laboratory's work was supported by the U.S. Department of Energy under contract DE-AC02-06CH11357. This project was also funded by the Los Alamos National Laboratory, 2019 LDRD grant ``Machine Learning for Turbulence". This paper describes objective technical results and analysis. Any subjective views or opinions that might be expressed in the paper do not necessarily represent the views of the U.S. DOE or the United States Government.
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections

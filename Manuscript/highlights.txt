@@ -1,4 +1,4 @@
 1. A non-instrusive reduced-order modeling technique for advective dynamics is proposed using machine learning.
 2. The study focusses on the use of learning methods for sequential data for reduced-space dynamics.
-3. Two learning frameworks, the long short-term memory network and the neural ordinary differential equation are deployed and assessed.
+3. Two learning frameworks, the long short-term memory network and the neural ordinary differential equation are deployed and assessed with details on architecture configuration using scaleable Bayesian optimization.
 4. The use of time-series learning which incorporates history within its formulation is seen to provide for closure implicitly.

@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{44}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
@@ -139,6 +139,17 @@
 \newblock \bibinfo{journal}{Annu. Rev. Fluid Mech.} \bibinfo{volume}{25}
   (\bibinfo{year}{1993}) \bibinfo{pages}{539--575}.
 %Type = Article
+\bibitem[{Taira et~al.(2019)Taira, Hemati, Brunton, Sun, Duraisamy, Bagheri,
+  Dawson, and Yeh}]{taira2019modal}
+\bibinfo{author}{K.~Taira}, \bibinfo{author}{M.~S. Hemati},
+  \bibinfo{author}{S.~L. Brunton}, \bibinfo{author}{Y.~Sun},
+  \bibinfo{author}{K.~Duraisamy}, \bibinfo{author}{S.~Bagheri},
+  \bibinfo{author}{S.~Dawson}, \bibinfo{author}{C.-A. Yeh},
+\newblock \bibinfo{title}{Modal analysis of fluid flows: Applications and
+  outlook},
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1903.05750}
+  (\bibinfo{year}{2019}).
+%Type = Article
 \bibitem[{Lee and Carlberg(2018)}]{lee2018model}
 \bibinfo{author}{K.~Lee}, \bibinfo{author}{K.~Carlberg},
 \newblock \bibinfo{title}{Model reduction of dynamical systems on nonlinear
@@ -225,6 +236,15 @@
   equations},
 \newblock \bibinfo{journal}{arXiv preprint arXiv:1904.02107}
   (\bibinfo{year}{2019}).
+%Type = Article
+\bibitem[{Raissi et~al.(2017)Raissi, Perdikaris, and
+  Karniadakis}]{raissi2017physics}
+\bibinfo{author}{M.~Raissi}, \bibinfo{author}{P.~Perdikaris},
+  \bibinfo{author}{G.~E. Karniadakis},
+\newblock \bibinfo{title}{Physics informed deep learning (part ii): Data-driven
+  discovery of nonlinear partial differential equations},
+\newblock \bibinfo{journal}{arXiv preprint arXiv:1711.10566}
+  (\bibinfo{year}{2017}).
 %Type = Article
 \bibitem[{Ma et~al.(2018)Ma, Wang et~al.}]{ma2018model}
 \bibinfo{author}{C.~Ma}, \bibinfo{author}{J.~Wang}, et~al.,
