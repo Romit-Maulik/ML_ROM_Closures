@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.16)  1 SEP 2019 10:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.16)  10 SEP 2019 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -280,12 +280,12 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 137.
+LaTeX Font Info:    Try loading font information for U+msa on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 137.
+LaTeX Font Info:    Try loading font information for U+msb on input line 129.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -297,12 +297,12 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
 Overfull \hbox (11.38893pt too wide) detected at line 266
 []
  []
 
-[4]
+
 Overfull \hbox (12.18925pt too wide) in paragraph at lines 278--282
 \OT1/cmr/m/n/12 are op-er-a-tors which can be com-puted of-fline (i.e, $\OML/cm
 m/m/it/12 b[]; L[] \OT1/cmr/m/n/12 : \OMS/cmsy/m/n/12 P ! \U/msb/m/n/12 R[]\OT1
@@ -310,23 +310,23 @@ m/m/it/12 b[]; L[] \OT1/cmr/m/n/12 : \OMS/cmsy/m/n/12 P ! \U/msb/m/n/12 R[]\OT1
  []
 
 [5] [6] [7] [8] [9] [10] [11]
-<Figure_1.pdf, id=53, 462.52798pt x 346.89601pt>
+<Figure_1.pdf, id=57, 462.52798pt x 346.89601pt>
 File: Figure_1.pdf Graphic file (type pdf)
 <use Figure_1.pdf>
 Package pdftex.def Info: Figure_1.pdf  used on input line 431.
 (pdftex.def)             Requested size: 331.50238pt x 248.63748pt.
- [12 <./Figure_1.pdf>]
-<Figure_2.pdf, id=64, 462.52798pt x 346.89601pt>
+<Figure_2.pdf, id=58, 462.52798pt x 346.89601pt>
 File: Figure_2.pdf Graphic file (type pdf)
 <use Figure_2.pdf>
 Package pdftex.def Info: Figure_2.pdf  used on input line 440.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-<Figure_3.pdf, id=65, 462.52798pt x 346.89601pt>
+<Figure_3.pdf, id=59, 462.52798pt x 346.89601pt>
 File: Figure_3.pdf Graphic file (type pdf)
 <use Figure_3.pdf>
 Package pdftex.def Info: Figure_3.pdf  used on input line 441.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-<Figure_4.pdf, id=66, 578.16pt x 794.97pt>
+ [12] [13 <./Figure_1.pdf>]
+<Figure_4.pdf, id=73, 578.16pt x 794.97pt>
 File: Figure_4.pdf Graphic file (type pdf)
 <use Figure_4.pdf>
 Package pdftex.def Info: Figure_4.pdf  used on input line 450.
@@ -335,52 +335,52 @@ Package pdftex.def Info: Figure_4.pdf  used on input line 450.
 
 LaTeX Warning: Float too large for page by 11.6864pt on input line 453.
 
-[13 <./Figure_2.pdf> <./Figure_3.pdf>] [14 <./Figure_4.pdf>]
-<Figure_5.pdf, id=92, 462.52798pt x 346.89601pt>
+[14 <./Figure_2.pdf> <./Figure_3.pdf>] [15 <./Figure_4.pdf>]
+<Figure_5.pdf, id=98, 462.52798pt x 346.89601pt>
 File: Figure_5.pdf Graphic file (type pdf)
 <use Figure_5.pdf>
 Package pdftex.def Info: Figure_5.pdf  used on input line 459.
 (pdftex.def)             Requested size: 390.0pt x 292.51282pt.
-<Figure_6.pdf, id=93, 462.52798pt x 346.89601pt>
+<Figure_6.pdf, id=99, 462.52798pt x 346.89601pt>
 File: Figure_6.pdf Graphic file (type pdf)
 <use Figure_6.pdf>
 Package pdftex.def Info: Figure_6.pdf  used on input line 466.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-<Figure_7.pdf, id=94, 462.52798pt x 346.89601pt>
+<Figure_7.pdf, id=100, 462.52798pt x 346.89601pt>
 File: Figure_7.pdf Graphic file (type pdf)
 <use Figure_7.pdf>
 Package pdftex.def Info: Figure_7.pdf  used on input line 467.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-<Figure_8.pdf, id=95, 462.52798pt x 346.89601pt>
+<Figure_8.pdf, id=101, 462.52798pt x 346.89601pt>
 File: Figure_8.pdf Graphic file (type pdf)
 <use Figure_8.pdf>
 Package pdftex.def Info: Figure_8.pdf  used on input line 474.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-<Figure_9.pdf, id=96, 462.52798pt x 346.89601pt>
+<Figure_9.pdf, id=102, 462.52798pt x 346.89601pt>
 File: Figure_9.pdf Graphic file (type pdf)
 <use Figure_9.pdf>
 Package pdftex.def Info: Figure_9.pdf  used on input line 475.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-<Figure_10.pdf, id=97, 722.7pt x 433.62pt>
+<Figure_10.pdf, id=103, 722.7pt x 433.62pt>
 File: Figure_10.pdf Graphic file (type pdf)
 <use Figure_10.pdf>
 Package pdftex.def Info: Figure_10.pdf  used on input line 482.
 (pdftex.def)             Requested size: 390.0pt x 233.99913pt.
-<Figure_11.pdf, id=98, 722.7pt x 433.62pt>
+<Figure_11.pdf, id=104, 722.7pt x 433.62pt>
 File: Figure_11.pdf Graphic file (type pdf)
 <use Figure_11.pdf>
 Package pdftex.def Info: Figure_11.pdf  used on input line 489.
 (pdftex.def)             Requested size: 390.0pt x 233.99913pt.
- [15 <./Figure_5.pdf>] [16 <./Figure_6.pdf> <./Figure_7.pdf> <./Figure_8.pdf> <
+ [16 <./Figure_5.pdf>] [17 <./Figure_6.pdf> <./Figure_7.pdf> <./Figure_8.pdf> <
 ./Figure_9.pdf>]
-[17 <./Figure_10.pdf>]
-<Figure_12.pdf, id=144, 462.52798pt x 346.89601pt>
+[18 <./Figure_10.pdf>]
+<Figure_12.pdf, id=150, 462.52798pt x 346.89601pt>
 File: Figure_12.pdf Graphic file (type pdf)
 <use Figure_12.pdf>
 Package pdftex.def Info: Figure_12.pdf  used on input line 524.
 (pdftex.def)             Requested size: 390.0pt x 292.51282pt.
- [18 <./Figure_11.pdf>] [19 <./Figure_12.pdf>]
-<Figure_13.pdf, id=164, 578.16pt x 794.97pt>
+ [19 <./Figure_11.pdf>] [20 <./Figure_12.pdf>]
+<Figure_13.pdf, id=170, 578.16pt x 794.97pt>
 File: Figure_13.pdf Graphic file (type pdf)
 <use Figure_13.pdf>
 Package pdftex.def Info: Figure_13.pdf  used on input line 533.
@@ -389,38 +389,38 @@ Package pdftex.def Info: Figure_13.pdf  used on input line 533.
 
 LaTeX Warning: Float too large for page by 11.6864pt on input line 536.
 
-<Figure_14.pdf, id=165, 462.52798pt x 346.89601pt>
+<Figure_14.pdf, id=171, 462.52798pt x 346.89601pt>
 File: Figure_14.pdf Graphic file (type pdf)
 <use Figure_14.pdf>
 Package pdftex.def Info: Figure_14.pdf  used on input line 540.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-<Figure_15.pdf, id=166, 462.52798pt x 346.89601pt>
+<Figure_15.pdf, id=172, 462.52798pt x 346.89601pt>
 File: Figure_15.pdf Graphic file (type pdf)
 <use Figure_15.pdf>
 Package pdftex.def Info: Figure_15.pdf  used on input line 541.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-<Figure_16.pdf, id=167, 462.52798pt x 346.89601pt>
+<Figure_16.pdf, id=173, 462.52798pt x 346.89601pt>
 File: Figure_16.pdf Graphic file (type pdf)
 <use Figure_16.pdf>
 Package pdftex.def Info: Figure_16.pdf  used on input line 548.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-<Figure_17.pdf, id=168, 462.52798pt x 346.89601pt>
+<Figure_17.pdf, id=174, 462.52798pt x 346.89601pt>
 File: Figure_17.pdf Graphic file (type pdf)
 <use Figure_17.pdf>
 Package pdftex.def Info: Figure_17.pdf  used on input line 549.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-[20] [21 <./Figure_13.pdf>] [22 <./Figure_14.pdf> <./Figure_15.pdf> <./Figure_1
+[21] [22 <./Figure_13.pdf>] [23 <./Figure_14.pdf> <./Figure_15.pdf> <./Figure_1
 6.pdf> <./Figure_17.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 564.
 
-<Figure_18.pdf, id=209, 1265.0763pt x 1265.0763pt>
+<Figure_18.pdf, id=215, 1265.0763pt x 1265.0763pt>
 File: Figure_18.pdf Graphic file (type pdf)
 <use Figure_18.pdf>
 Package pdftex.def Info: Figure_18.pdf  used on input line 581.
 (pdftex.def)             Requested size: 390.0pt x 389.98831pt.
-<Figure_19.pdf, id=210, 722.90076pt x 578.32057pt>
+<Figure_19.pdf, id=216, 722.90076pt x 578.32057pt>
 File: Figure_19.pdf Graphic file (type pdf)
 <use Figure_19.pdf>
 Package pdftex.def Info: Figure_19.pdf  used on input line 588.
@@ -429,43 +429,43 @@ Package pdftex.def Info: Figure_19.pdf  used on input line 588.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 595.
 
-<Figure_20.pdf, id=211, 1264.725pt x 1264.725pt>
+<Figure_20.pdf, id=217, 1264.725pt x 1264.725pt>
 File: Figure_20.pdf Graphic file (type pdf)
 <use Figure_20.pdf>
 Package pdftex.def Info: Figure_20.pdf  used on input line 612.
 (pdftex.def)             Requested size: 390.0pt x 389.9958pt.
-<Figure_21.pdf, id=212, 722.7pt x 578.16pt>
+<Figure_21.pdf, id=218, 722.7pt x 578.16pt>
 File: Figure_21.pdf Graphic file (type pdf)
 <use Figure_21.pdf>
 Package pdftex.def Info: Figure_21.pdf  used on input line 619.
 (pdftex.def)             Requested size: 390.0pt x 311.99884pt.
-<Figure_22.pdf, id=213, 867.24pt x 794.97pt>
+<Figure_22.pdf, id=219, 867.24pt x 794.97pt>
 File: Figure_22.pdf Graphic file (type pdf)
 <use Figure_22.pdf>
 Package pdftex.def Info: Figure_22.pdf  used on input line 629.
 (pdftex.def)             Requested size: 390.0pt x 357.50272pt.
-<Figure_23.pdf, id=214, 462.52798pt x 346.89601pt>
+<Figure_23.pdf, id=220, 462.52798pt x 346.89601pt>
 File: Figure_23.pdf Graphic file (type pdf)
 <use Figure_23.pdf>
 Package pdftex.def Info: Figure_23.pdf  used on input line 636.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-<Figure_24.pdf, id=215, 462.52798pt x 346.89601pt>
+<Figure_24.pdf, id=221, 462.52798pt x 346.89601pt>
 File: Figure_24.pdf Graphic file (type pdf)
 <use Figure_24.pdf>
 Package pdftex.def Info: Figure_24.pdf  used on input line 637.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
-[23] [24 <./Figure_18.pdf>] [25 <./Figure_19.pdf>] [26 <./Figure_20.pdf>]
-[27 <./Figure_21.pdf>] [28 <./Figure_22.pdf>] [29 <./Figure_23.pdf> <./Figure_2
-4.pdf>] (./elsarticle-template-1-num.bbl [30] [31] [32] [33]) [34]
+[24] [25 <./Figure_18.pdf>] [26 <./Figure_19.pdf>] [27 <./Figure_20.pdf>]
+[28 <./Figure_21.pdf>] [29 <./Figure_22.pdf>] [30 <./Figure_23.pdf> <./Figure_2
+4.pdf>] (./elsarticle-template-1-num.bbl [31] [32] [33] [34]) [35]
 (./elsarticle-template-1-num.aux) ) 
 Here is how much of TeX's memory you used:
- 3639 strings out of 492982
- 49568 string characters out of 6134896
- 115287 words of memory out of 5000000
- 7120 multiletter control sequences out of 15000+600000
- 12215 words of font info for 45 fonts, out of 8000000 for 9000
+ 3657 strings out of 492982
+ 49744 string characters out of 6134896
+ 114645 words of memory out of 5000000
+ 7134 multiletter control sequences out of 15000+600000
+ 14431 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,20n,30p,1862b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,20n,30p,1862b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
@@ -479,15 +479,17 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on elsarticle-template-1-num.pdf (34 pages, 1874041 bytes).
+sfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on elsarticle-template-1-num.pdf (35 pages, 1908564 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 226 compressed objects within 3 object streams
+ 370 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

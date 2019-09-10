@@ -90,24 +90,24 @@
 %% \title{Title\tnoteref{label1}}
 %% \tnotetext[label1]{}
 
-% %% Author info
-% \author[label1]{Romit Maulik\corref{cor1}}
-% \cortext[cor1]{Corresponding author}
-% \ead{rmaulik@anl.gov}
-% \author[label2]{Arvind Mohan}
-% \ead{arvindm@lanl.gov}
-% \author[label1]{Bethany Lusch}
-% \ead{blusch@anl.gov}
-% \author[label3]{Sandeep Madireddy}
-% \ead{smadireddy@anl.gov}
-% \author[label1,label3]{Prasanna Balaprakash}
-% \ead{pbalapra@anl.gov}
-% \author[label2]{Daniel Livescu}
-% \ead{livescu@lanl.gov}
+%% Author info
+\author[label1]{Romit Maulik\corref{cor1}}
+\cortext[cor1]{Corresponding author}
+\ead{rmaulik@anl.gov}
+\author[label2]{Arvind Mohan}
+\ead{arvindm@lanl.gov}
+\author[label1]{Bethany Lusch}
+\ead{blusch@anl.gov}
+\author[label3]{Sandeep Madireddy}
+\ead{smadireddy@anl.gov}
+\author[label1,label3]{Prasanna Balaprakash}
+\ead{pbalapra@anl.gov}
+\author[label2]{Daniel Livescu}
+\ead{livescu@lanl.gov}
 
-% \address[label1]{Argonne Leadership Computing Facility, Argonne National Laboratory, Lemont, IL 60439, USA\fnref{label1}}
-% \address[label2]{Center for Nonlinear Studies/CCS-2 Division, Los Alamos National Laboratory, Los Alamos, NM 87545, USA\fnref{label2}}
-% \address[label3]{Mathematics and Computer Science Division, Argonne National Laboratory, Lemont, IL 60439, USA\fnref{label3}}
+\address[label1]{Argonne Leadership Computing Facility, Argonne National Laboratory, Lemont, IL 60439, USA\fnref{label1}}
+\address[label2]{Center for Nonlinear Studies/CCS-2 Division, Los Alamos National Laboratory, Los Alamos, NM 87545, USA\fnref{label2}}
+\address[label3]{Mathematics and Computer Science Division, Argonne National Laboratory, Lemont, IL 60439, USA\fnref{label3}}
 
 
 
@@ -330,19 +330,19 @@ For the purpose of testing, we note that all assessments for the problems are th
 
 \subsection{Long short-term memory networks}
 
-The long short-term memory (LSTM) network was introduced to consider time-delayed processes where events further back in the past may potentially affect predictions for the current location in the sequence. The basic equations of the LSTM in our context for an input variable $\mathbf{a}_r$ are given by
+The long short-term memory (LSTM) network was introduced to consider time-delayed processes where events further back in the past may potentially affect predictions for the current location in the sequence. The basic equations of the LSTM in our context for an input variable $\mathbf{z}$ are given by
 \begin{linenomath*}
 \begin{align}
 \begin{split}
-\text{input gate: }& \boldsymbol{G}_{i}=\boldsymbol{\varphi}_{S} \circ \mathcal{F}_{i}^{N_{c}}(\mathbf{a}_r), \\
-\text{forget gate: }& \boldsymbol{G}_{f}=\boldsymbol{\varphi}_{S} \circ \mathcal{F}_{f}^{N_{c}}(\mathbf{a}_r), \\
-\text{output gate: }& \boldsymbol{G}_{o}=\boldsymbol{\varphi}_{S} \circ \mathcal{F}_{o}^{N_{c}}(\mathbf{a}_r), \\
-\text{internal state: }& \boldsymbol{s}_{t}=\boldsymbol{G}_{f} \odot \boldsymbol{s}_{t-1}+\boldsymbol{G}_{i} \odot\left(\boldsymbol{\varphi}_{T} \circ \mathcal{F}_{\mathbf{a}_r}^{N_{c}}(\mathbf{a}_r)\right), \\
-\text{output: }& \boldsymbol{G}_{o} \circ \boldsymbol{\varphi}_{T}\left(\boldsymbol{s}_{t}\right),
+\text{input gate: }& \boldsymbol{G}_{i}=\boldsymbol{\varphi}_{S} \circ \mathcal{F}_{i}^{N_{c}}(\mathbf{z}), \\
+\text{forget gate: }& \boldsymbol{G}_{f}=\boldsymbol{\varphi}_{S} \circ \mathcal{F}_{f}^{N_{c}}(\mathbf{z}), \\
+\text{output gate: }& \boldsymbol{G}_{o}=\boldsymbol{\varphi}_{S} \circ \mathcal{F}_{o}^{N_{c}}(\mathbf{z}), \\
+\text{internal state: }& \boldsymbol{s}_{t}=\boldsymbol{G}_{f} \odot \boldsymbol{s}_{t-1}+\boldsymbol{G}_{i} \odot\left(\boldsymbol{\varphi}_{T} \circ \mathcal{F}_{\mathbf{z}}^{N_{c}}(\mathbf{z})\right), \\
+\text{output: }& \mathbf{h}_t = \boldsymbol{G}_{o} \circ \boldsymbol{\varphi}_{T}\left(\boldsymbol{s}_{t}\right),
 \end{split}
 \end{align}
 \end{linenomath*}
-in which $\boldsymbol{\varphi}_{S}$ and $\boldsymbol{\varphi}_{L}$ refer to tangent sigmoid and tangent hyperbolic activation functions respectively, $N_c$ is the number of hidden layer units in the LSTM network. Note that $\mathcal{F}^{n}$ refers to a linear operation given by a matrix multiplication and subsequent bias addition i.e,
+where $\mathbf{z} = \text{concat}[\mathbf{a}_r,\mathbf{h}_{t-1}]$. Also, $\boldsymbol{\varphi}_{S}$ and $\boldsymbol{\varphi}_{L}$ refer to tangent sigmoid and tangent hyperbolic activation functions respectively, $N_c$ is the number of hidden layer units in the LSTM network. Note that $\mathcal{F}^{n}$ refers to a linear operation given by a matrix multiplication and subsequent bias addition i.e,
 \begin{linenomath*}
 \begin{align}
 \mathcal{F}^{n}(\boldsymbol{x})=\boldsymbol{W} \boldsymbol{x}+\boldsymbol{B},
@@ -654,7 +654,7 @@ All the relevant data and codes for this study shall be provided in a public rep
 
 \section{Acknowledgements}
 
-This research used resources of the Argonne Leadership Computing Facility, a U.S. Department of Energy (DOE) Office of Science User Facility. Romit Maulik acknowledges an appointment to the Argonne National Laboratory Margaret Butler fellowship. Deephyper was developed with support from the DOE 2018 Early Career Award funded by the Advanced Scientific Computing Research program (PI: Prasanna Balaprakash) and SLIK-D - an Argonne Computing, Environment and Life Sciences LDRD Program (2016-2018). Argonne National Laboratory's work was supported by the U.S. Department of Energy under contract DE-AC02-06CH11357. This project was also funded by the Los Alamos National Laboratory, 2019 LDRD grant ``Machine Learning for Turbulence". This paper describes objective technical results and analysis. Any subjective views or opinions that might be expressed in the paper do not necessarily represent the views of the U.S. DOE or the United States Government.
+This material is based upon work supported by the U.S. Department of Energy (DOE), Office of Science, Office of Advanced Scientific Computing Research, under Contract DE-AC02-06CH11357. This research was funded in part and used resources of the Argonne Leadership Computing Facility, which is a DOE Office of Science User Facility supported under Contract DE-AC02-06CH11357. This project was also funded by the Los Alamos National Laboratory, 2019 LDRD grant ``Machine Learning for Turbulence". This paper describes objective technical results and analysis. Any subjective views or opinions that might be expressed in the paper do not necessarily represent the views of the U.S. DOE or the United States Government.
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
