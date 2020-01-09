@@ -22,6 +22,8 @@ num_modes = 3
 num_epochs = 500
 reg_param = 0.001
 reg_param_fnl = 0.001
+# Deployment mode
+deployment_mode = 'test' # or train
 
 #-------------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------------
@@ -81,7 +83,7 @@ if __name__ == "__main__":
     np.save('Burgulence_GP_Coefficients.npy',state_tracker_gp)
 
     # # LSTM network - note this will only give good predictions till the last three timesteps
-    model = lstm_for_dynamics(cf_trunc,num_epochs,3)
+    model = lstm_for_dynamics(cf_trunc,num_epochs,3,deployment_mode)
     output_state_lstm, state_tracker_lstm = evaluate_rom_deployment_lstm(model,cf_trunc,tsteps,num_modes,3)
 
     np.save('Burgulence_LSTM_Coefficients.npy',state_tracker_lstm)

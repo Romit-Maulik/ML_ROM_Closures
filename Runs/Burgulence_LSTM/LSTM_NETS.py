@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model, Sequential
 import numpy as np
 
 
-def lstm_for_dynamics(cf_trunc,num_epochs,seq_num=2):
+def lstm_for_dynamics(cf_trunc,num_epochs,seq_num=2,deployment_mode='train'):
     features = np.transpose(cf_trunc)
     states = np.copy(features[:,:]) #Rows are time, Columns are state values
 
@@ -21,12 +21,6 @@ def lstm_for_dynamics(cf_trunc,num_epochs,seq_num=2):
         input_seq[t,:,:] = states[None,t:t+seq_num,:]
         output_seq[t,:] = states[t+seq_num,:]
     
-    # # Model architecture
-    # model = Sequential()
-    # model.add(LSTM(32, return_sequences=True,
-    #            input_shape=(seq_num, np.shape(states)[1])))  # returns a sequence of vectors of dimension 32
-    # model.add(LSTM(32))  # return a single vector of dimension 32
-    # model.add(Dense(np.shape(states)[1], activation='linear'))
 
     # Model architecture
     model = Sequential()
@@ -42,9 +36,10 @@ def lstm_for_dynamics(cf_trunc,num_epochs,seq_num=2):
     
     # fit network
     model.compile(optimizer=my_adam,loss='mean_squared_error',metrics=[coeff_determination])
-    train_history = model.fit(input_seq, output_seq, epochs=num_epochs, batch_size=16, callbacks=callbacks_list)#validation_split = 0.1
 
-    np.save('MSE_Loss.npy',train_history.history['loss'])
+    if deployment_mode == 'train':
+        train_history = model.fit(input_seq, output_seq, epochs=num_epochs, batch_size=16, callbacks=callbacks_list)
+        np.save('MSE_Loss.npy',train_history.history['loss'])
 
     model.load_weights(filepath)
 

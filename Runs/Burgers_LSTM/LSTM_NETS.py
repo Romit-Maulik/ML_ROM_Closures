@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model, Sequential
 import numpy as np
 
 
-def lstm_for_dynamics(cf_trunc,num_epochs,seq_num=10):
+def lstm_for_dynamics(cf_trunc,num_epochs,seq_num=10,deployment_mode='train'):
     features = np.transpose(cf_trunc)
     states = np.copy(features[:,:]) #Rows are time, Columns are state values
 
@@ -41,12 +41,15 @@ def lstm_for_dynamics(cf_trunc,num_epochs,seq_num=10):
     
     # fit network
     model.compile(optimizer=my_adam,loss='mean_squared_error',metrics=[coeff_determination])
-    train_history = model.fit(input_seq, output_seq, epochs=num_epochs, batch_size=16, validation_split=0.33, callbacks=callbacks_list)#validation_split = 0.1
+
+    if deployment_mode == 'train':
+        train_history = model.fit(input_seq, output_seq, epochs=num_epochs, batch_size=16, validation_split=0.33, callbacks=callbacks_list)#validation_split = 0.1
+        np.save('Train_Loss.npy',train_history.history['loss'])
+        np.save('Val_Loss.npy',train_history.history['val_loss'])
 
     model.load_weights(filepath)
 
-    np.save('Train_Loss.npy',train_history.history['loss'])
-    np.save('Val_Loss.npy',train_history.history['val_loss'])
+    
 
     return model
 

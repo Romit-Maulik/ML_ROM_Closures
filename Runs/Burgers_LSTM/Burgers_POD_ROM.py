@@ -19,6 +19,8 @@ num_modes = 3
 num_epochs = 500
 reg_param = 0.001
 reg_param_fnl = 0.001
+# Deployment mode
+deployment_mode = 'test' # or train
 
 #-------------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------------
@@ -65,8 +67,8 @@ if __name__ == "__main__":
 
     np.save('Burgers_GP_Coefficients_400.npy',state_tracker_gp)
 
-    # # LSTM network - note this will only give good predictions till the last three timesteps
-    model = lstm_for_dynamics(cf_trunc,num_epochs,10)
+    # LSTM network
+    model = lstm_for_dynamics(cf_trunc,num_epochs,10,deployment_mode)
     output_state_lstm, state_tracker_lstm = evaluate_rom_deployment_lstm(model,cf_trunc,tsteps,num_modes,10)
 
     np.save('LSTM_Coefficients_400.npy',state_tracker_lstm)

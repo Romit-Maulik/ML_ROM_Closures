@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model, Sequential
 import numpy as np
 
 
-def lstm_for_dynamics(cf_trunc):
+def lstm_for_dynamics(cf_trunc,deployment_mode='test'):
     # LSTM hyperparameters
     seq_num = 30
     num_units = 73
@@ -50,12 +50,15 @@ def lstm_for_dynamics(cf_trunc):
     
     # fit network
     model.compile(optimizer=my_adam,loss='mean_squared_error',metrics=[coeff_determination])
-    # train_history = model.fit(input_seq, output_seq, epochs=num_epochs, batch_size=batch_size, validation_split=0.33, callbacks=callbacks_list)#validation_split = 0.1
+
+    if deployment_mode == 'train':
+        train_history = model.fit(input_seq, output_seq, epochs=num_epochs, batch_size=batch_size, validation_split=0.33, callbacks=callbacks_list)#validation_split = 0.1
+        np.save('Train_Loss.npy',train_history.history['loss'])
+        np.save('Val_Loss.npy',train_history.history['val_loss'])
 
     model.load_weights(filepath)
 
-    # np.save('Train_Loss.npy',train_history.history['loss'])
-    # np.save('Val_Loss.npy',train_history.history['val_loss'])
+    
 
     return model
 

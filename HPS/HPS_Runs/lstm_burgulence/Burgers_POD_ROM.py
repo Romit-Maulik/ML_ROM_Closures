@@ -19,6 +19,9 @@ dt = 0.2/400
 tsteps = np.linspace(0.0,0.2,num=int(0.2/dt))
 num_modes = 3
 
+# Deployment mode
+deployment_mode = 'test' # or 'train'
+
 #-------------------------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------------------------
 # Calculate energy spectra
@@ -71,7 +74,7 @@ if __name__ == "__main__":
     output_state_gp, state_tracker_gp = galerkin_projection(phi_trunc,cf_trunc,sm_mean,tsteps,Rnum,dt,dx,num_modes)
 
     # # LSTM network - note this will only give good predictions till the last three timesteps
-    model = lstm_for_dynamics(cf_trunc)
+    model = lstm_for_dynamics(cf_trunc,deployment_mode)
     output_state_lstm, state_tracker_lstm = evaluate_rom_deployment_lstm(model,cf_trunc,tsteps)
     np.save('Burgulence_LSTM_Coefficients.npy',state_tracker_lstm)
 

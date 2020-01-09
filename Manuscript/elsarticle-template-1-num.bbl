@@ -150,12 +150,12 @@
 \newblock \bibinfo{journal}{arXiv preprint arXiv:1903.05750}
   (\bibinfo{year}{2019}).
 %Type = Article
-\bibitem[{Lee and Carlberg(2018)}]{lee2018model}
-\bibinfo{author}{K.~Lee}, \bibinfo{author}{K.~Carlberg},
+\bibitem[{Lee and Carlberg(2019)}]{lee2019model}
+\bibinfo{author}{K.~Lee}, \bibinfo{author}{K.~T. Carlberg},
 \newblock \bibinfo{title}{Model reduction of dynamical systems on nonlinear
   manifolds using deep convolutional autoencoders},
-\newblock \bibinfo{journal}{arXiv preprint arXiv:1812.08373}
-  (\bibinfo{year}{2018}).
+\newblock \bibinfo{journal}{Journal of Computational Physics}
+  (\bibinfo{year}{2019}) \bibinfo{pages}{108973}.
 %Type = Article
 \bibitem[{Lusch et~al.(2018)Lusch, Kutz, and Brunton}]{lusch2018deep}
 \bibinfo{author}{B.~Lusch}, \bibinfo{author}{J.~N. Kutz},

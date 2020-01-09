@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.16)  10 SEP 2019 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.16)  18 DEC 2019 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -195,21 +195,29 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@top=\skip56
 \subfig@bottom=\skip57
 )
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
 (./elsarticle-template-1-num.aux)
 \openout1 = `elsarticle-template-1-num.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -456,16 +464,16 @@ Package pdftex.def Info: Figure_24.pdf  used on input line 637.
 (pdftex.def)             Requested size: 187.19833pt x 140.40213pt.
 [24] [25 <./Figure_18.pdf>] [26 <./Figure_19.pdf>] [27 <./Figure_20.pdf>]
 [28 <./Figure_21.pdf>] [29 <./Figure_22.pdf>] [30 <./Figure_23.pdf> <./Figure_2
-4.pdf>] (./elsarticle-template-1-num.bbl [31] [32] [33] [34]) [35]
+4.pdf>] [31] (./elsarticle-template-1-num.bbl [32] [33] [34] [35]) [36]
 (./elsarticle-template-1-num.aux) ) 
 Here is how much of TeX's memory you used:
- 3657 strings out of 492982
- 49744 string characters out of 6134896
- 114645 words of memory out of 5000000
- 7134 multiletter control sequences out of 15000+600000
+ 3701 strings out of 492982
+ 50442 string characters out of 6134896
+ 116558 words of memory out of 5000000
+ 7173 multiletter control sequences out of 15000+600000
  14431 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,20n,30p,1862b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,20n,30p,2232b,308s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
@@ -486,10 +494,10 @@ cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on elsarticle-template-1-num.pdf (35 pages, 1908564 bytes).
+Output written on elsarticle-template-1-num.pdf (36 pages, 1911205 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
+ 373 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
