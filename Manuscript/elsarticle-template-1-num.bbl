@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{46}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
@@ -8,7 +8,7 @@
 \bibinfo{author}{K.~Carlberg}, \bibinfo{author}{C.~Bou-Mosleh},
   \bibinfo{author}{C.~Farhat},
 \newblock \bibinfo{title}{{Efficient non-linear model reduction via a
-  least-squares Petrov--Galerkin projection and compressive tensor
+  least-squares Petrov-Galerkin projection and compressive tensor
   approximations}},
 \newblock \bibinfo{journal}{Int. J. Numer. Meth. Eng.} \bibinfo{volume}{86}
   (\bibinfo{year}{2011}) \bibinfo{pages}{155--181}.
@@ -33,8 +33,8 @@
   Rozza}]{ballarin2015supremizer}
 \bibinfo{author}{F.~Ballarin}, \bibinfo{author}{A.~Manzoni},
   \bibinfo{author}{A.~Quarteroni}, \bibinfo{author}{G.~Rozza},
-\newblock \bibinfo{title}{{Supremizer stabilization of POD--Galerkin
-  approximation of parametrized steady incompressible Navier--Stokes
+\newblock \bibinfo{title}{{Supremizer stabilization of POD-Galerkin
+  approximation of parametrized steady incompressible Navier-Stokes
   equations}},
 \newblock \bibinfo{journal}{Int. J. Numer. Meth. Eng.} \bibinfo{volume}{102}
   (\bibinfo{year}{2015}) \bibinfo{pages}{1136--1161}.
@@ -57,10 +57,20 @@
 %Type = Article
 \bibitem[{Choi and Carlberg(2019)}]{choi2019space}
 \bibinfo{author}{Y.~Choi}, \bibinfo{author}{K.~Carlberg},
-\newblock \bibinfo{title}{Space--time least-squares petrov--galerkin projection
-  for nonlinear model reduction},
+\newblock \bibinfo{title}{Space-time least-squares {Petrov--Galerkin}
+  projection for nonlinear model reduction},
 \newblock \bibinfo{journal}{SIAM J. Sci. Comput.} \bibinfo{volume}{41}
   (\bibinfo{year}{2019}) \bibinfo{pages}{A26--A58}.
+%Type = Article
+\bibitem[{Maulik et~al.(2019)Maulik, Rao, Madireddy, Lusch, and
+  Balaprakash}]{maulik2019using}
+\bibinfo{author}{R.~Maulik}, \bibinfo{author}{V.~Rao},
+  \bibinfo{author}{S.~Madireddy}, \bibinfo{author}{B.~Lusch},
+  \bibinfo{author}{P.~Balaprakash},
+\newblock \bibinfo{title}{Using recurrent neural networks for nonlinear
+  component computation in advection-dominated reduced-order models},
+\newblock \bibinfo{journal}{Second Workshop on Machine Learning and the
+  Physical Sciences (NeurIPS 2019), Vancouver, Canada}  (\bibinfo{year}{2019}).
 %Type = Article
 \bibitem[{Proctor et~al.(2016)Proctor, Brunton, and Kutz}]{proctor2016dynamic}
 \bibinfo{author}{J.~L. Proctor}, \bibinfo{author}{S.~L. Brunton},
@@ -241,8 +251,8 @@
   Karniadakis}]{raissi2017physics}
 \bibinfo{author}{M.~Raissi}, \bibinfo{author}{P.~Perdikaris},
   \bibinfo{author}{G.~E. Karniadakis},
-\newblock \bibinfo{title}{Physics informed deep learning (part ii): Data-driven
-  discovery of nonlinear partial differential equations},
+\newblock \bibinfo{title}{Physics informed deep learning ({Part II}):
+  Data-driven discovery of nonlinear partial differential equations},
 \newblock \bibinfo{journal}{arXiv preprint arXiv:1711.10566}
   (\bibinfo{year}{2017}).
 %Type = Article
@@ -337,10 +347,17 @@
 \bibinfo{author}{P.~Balaprakash}, \bibinfo{author}{M.~Salim},
   \bibinfo{author}{T.~Uram}, \bibinfo{author}{V.~Vishwanath},
   \bibinfo{author}{S.~Wild},
-\newblock \bibinfo{title}{Deephyper: Asynchronous hyperparameter search for
+\newblock \bibinfo{title}{{DeepHyper}: Asynchronous hyperparameter search for
   deep neural networks},
 \newblock in: \bibinfo{booktitle}{2018 IEEE 25th International Conference on
   High Performance Computing (HiPC)}, \bibinfo{organization}{IEEE}, pp.
   \bibinfo{pages}{42--51}.
+%Type = Article
+\bibitem[{Mohan et~al.(2019)Mohan, Livescu, and Chertkov}]{mohanwavelet}
+\bibinfo{author}{A.~T. Mohan}, \bibinfo{author}{D.~Livescu},
+  \bibinfo{author}{M.~Chertkov},
+\newblock \bibinfo{title}{Wavelet-powered neural networks for turbulence},
+\newblock \bibinfo{journal}{Second Workshop on Machine Learning and the
+  Physical Sciences (NeurIPS 2019), Vancouver, Canada}  (\bibinfo{year}{2019}).
 
 \end{thebibliography}
