@@ -4,7 +4,7 @@ Using sequential learning techniques for closing reduced-order models
 ## Runs
 These are results using the hand-tuned hyperparameters
 
-## HPS-Runs
+## HPS
 These are results using deephyper for hyperparameter optimization
 
 ## Note
