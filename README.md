@@ -3,7 +3,7 @@ Time-series learning of latent-space dynamics for reduced-order model closure
 
 R. Maulik, A. Mohan, B. Lusch, S. Madireddy, P. Balaprakash, D. Livescu
 
-Physica, D, https://doi.org/10.1016/j.physd.2020.132368
+https://doi.org/10.1016/j.physd.2020.132368
 
 ## Runs
 These are results using the hand-tuned hyperparameters
